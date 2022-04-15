@@ -1,6 +1,6 @@
 <div align=center>
 	
-[![Anurag's github stats](https://github-readme-stats.vercel.app/api?wjsgmlwls97=wjsgmlwls97)](https://github.com/anuraghazra/github-readme-stats)
+![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?h2jinee=anuraghazra&show_icons=true&theme=radical)
 	
 </div>
 
