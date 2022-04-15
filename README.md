@@ -6,7 +6,7 @@
 
 <div align=center>
 	
-[![Solved.ac프로필](http://mazassumnida.wtf/api/v2/generate_badge?boj=h2jinee)](https://solved.ac/h2jinee) 
+[![Solved.ac프로필](http://mazassumnida.wtf/api/v2/generate_badge?boj=wjsgmlwls97)](https://solved.ac/wjsgmlwls97) 
 	
 </div>
  
