@@ -16,16 +16,10 @@ Here are some ideas to get you started:
 - 😄 Pronouns: ...
 - ⚡ Fun fact: ...
 -->
-
 <div align=center>
 	
-![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=h2jinee&show_icons=true&theme=radical)
-	
-</div>
+[![Solved.ac프로필](http://mazassumnida.wtf/api/v2/generate_badge?boj=wjsgmlwls97)](https://solved.ac/wjsgmlwls97)
 
-<div align=center>
-	
-[![Solved.ac프로필](http://mazassumnida.wtf/api/v2/generate_badge?boj=wjsgmlwls97)](https://solved.ac/wjsgmlwls97) 
 <img src="http://mazandi.herokuapp.com/api?handle=wjsgmlwls97&theme=warm"/>	
 </div>
  
