@@ -53,7 +53,9 @@
 <div align="center">
   
 [![Solved.ac프로필](http://mazassumnida.wtf/api/v2/generate_badge?boj=wjsgmlwls97)](https://solved.ac/wjsgmlwls97)
+<!--
 <img src="http://mazandi.herokuapp.com/api?handle=wjsgmlwls97&theme=warm"/>	
+-->
 
 </div>
 
