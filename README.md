@@ -1,30 +1,68 @@
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:faffc0,10:e1ffc0,30:c0ffde,75:c0fffd,100:c0e8ff&height=100&section=header&text=&fontSize=0" width="100%"/>
 
 ### Hi there 👋
+---
+
+### 🚀 About Me
+
+- 🔭 I’m currently developing backend systems using Spring Boot, and I've been a developer since August 2020.
+- 🌱 I solve coding problems daily to improve my coding interview skills and I'm also studying CS topics.
+- 💻 I'm continuously learning Java, Spring, and JPA to become a more proficient and deep-skilled developer.
+- 👯 I'm looking for opportunities to contribute to open-source projects.
+- 📫 You can reach me via [email](mailto:wjsgmlwls97@gmail.com).
+
+---
+
+### 🛠 Tech Stack
+
+<div align="center">
+<img alt="Java" src ="https://img.shields.io/badge/Java-007396.svg?&style=for-the-badge&logo=Java&logoColor=white"/>
+<img src="https://img.shields.io/badge/Flutter-02569B?style=for-the-badge&logo=flutter&logoColor=white"/> 
+<img src="https://img.shields.io/badge/Spring-6DB33F?style=for-the-badge&logo=spring&logoColor=white"/> 
+<img src="https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white"/>
+<img src="https://img.shields.io/badge/Oracle-F80000?style=for-the-badge&logo=oracle&logoColor=white"/>
+<img src="https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white"/>
+<img src="https://img.shields.io/badge/AWS-FF9900?style=for-the-badge&logo=amazon-aws&logoColor=white"/>
+<img src="https://img.shields.io/badge/Jenkins-D24939?style=for-the-badge&logo=jenkins&logoColor=white"/>
+</div>
+
+---
+
+### 📊 GitHub Stats
+
+<div align="center">
+  
+![h2jinee's GitHub stats](https://github-readme-stats.vercel.app/api?username=h2jinee&show_icons=true&theme=vue&hide=issues)
+![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=h2jinee&layout=compact&theme=vue)
+
+</div>
 
 <!--
-**h2jinee/h2jinee** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+---
 
-Here are some ideas to get you started:
+### 🌟 Top Projects
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
+- [**Project 1**](https://github.com/h2jinee/project1) - 설명을 간단하게 적습니다.
+- [**Project 2**](https://github.com/h2jinee/project2) - 설명을 간단하게 적습니다.
 -->
-<div align=center>
-	
-[![Solved.ac프로필](http://mazassumnida.wtf/api/v2/generate_badge?boj=wjsgmlwls97)](https://solved.ac/wjsgmlwls97)
 
+---
+
+### 🧩 Problem Solving Stats
+
+<div align="center">
+  
+[![Solved.ac프로필](http://mazassumnida.wtf/api/v2/generate_badge?boj=wjsgmlwls97)](https://solved.ac/wjsgmlwls97)
 <img src="http://mazandi.herokuapp.com/api?handle=wjsgmlwls97&theme=warm"/>	
+
 </div>
- 
-<div align=center>
-	
-[![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Fh2jinee)](https://hits.seeyoufarm.com) 
-	
+
+<br>
+<br>
+
+<div align="center">
+
+[![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Fh2jinee%2Fhit-counter&count_bg=%23C0E8FF&title_bg=%23C0E8FF&icon=&icon_color=%23E7E7E7&title=hits&edge_flat=false)](https://hits.seeyoufarm.com)
+
 </div>
+
