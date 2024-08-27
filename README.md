@@ -1,3 +1,5 @@
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:faffc0,10:e1ffc0,30:c0ffde,75:c0fffd,100:c0e8ff&height=100&section=header&text=&fontSize=0" width="100%"/>
+
 ### Hi there 👋
 
 <!--
@@ -24,7 +26,7 @@ Here are some ideas to get you started:
 <div align=center>
 	
 [![Solved.ac프로필](http://mazassumnida.wtf/api/v2/generate_badge?boj=wjsgmlwls97)](https://solved.ac/wjsgmlwls97) 
-	
+<img src="http://mazandi.herokuapp.com/api?handle=wjsgmlwls97&theme=warm"/>	
 </div>
  
 <div align=center>
