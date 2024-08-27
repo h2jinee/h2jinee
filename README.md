@@ -48,7 +48,7 @@
 
 ---
 
-### 🧩 Problem Solving Stats
+### 🧩 Solved.ac Stats
 
 <div align="center">
   
