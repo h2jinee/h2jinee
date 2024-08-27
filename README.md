@@ -5,8 +5,8 @@
 
 ### 🚀 About Me
 
-- 🔭 I’m currently developing backend systems using Spring Boot, and I've been a developer since August 2020.
-- 🌱 I solve coding problems daily to improve my coding interview skills and I'm also studying CS topics.
+- 🔭 I’ve been working as a backend developer since August 2020, with Spring as my primary framework.
+- 🌱 I work on data structures and algorithm problems to enhance my coding interview skills, and I'm also studying CS topics.
 - 💻 I'm continuously learning Java, Spring, and JPA to become a more proficient and deep-skilled developer.
 - 👯 I'm looking for opportunities to contribute to open-source projects.
 - 📫 You can reach me via [email](mailto:wjsgmlwls97@gmail.com).
