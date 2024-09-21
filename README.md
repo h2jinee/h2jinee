@@ -16,14 +16,14 @@
 ### 🛠 Tech Stack
 
 <div align="center">
-<img alt="Java" src ="https://img.shields.io/badge/Java-007396.svg?&style=for-the-badge&logo=Java&logoColor=white"/>
-<img src="https://img.shields.io/badge/Flutter-02569B?style=for-the-badge&logo=flutter&logoColor=white"/> 
-<img src="https://img.shields.io/badge/Spring-6DB33F?style=for-the-badge&logo=spring&logoColor=white"/> 
-<img src="https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white"/>
-<img src="https://img.shields.io/badge/Oracle-F80000?style=for-the-badge&logo=oracle&logoColor=white"/>
-<img src="https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white"/>
-<img src="https://img.shields.io/badge/AWS-FF9900?style=for-the-badge&logo=amazon-aws&logoColor=white"/>
-<img src="https://img.shields.io/badge/Jenkins-D24939?style=for-the-badge&logo=jenkins&logoColor=white"/>
+  <img alt="Java" src="https://img.shields.io/badge/Java-007396.svg?&style=for-the-badge&logo=Java&logoColor=white"/>
+  <img alt="Flutter" src="https://img.shields.io/badge/Flutter-02569B?style=for-the-badge&logo=flutter&logoColor=white"/>
+  <img alt="Spring" src="https://img.shields.io/badge/Spring-6DB33F?style=for-the-badge&logo=spring&logoColor=white"/>
+  <img alt="MySQL" src="https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white"/>
+  <img alt="Oracle" src="https://img.shields.io/badge/Oracle-F80000?style=for-the-badge&logo=oracle&logoColor=white"/>
+  <img alt="PostgreSQL" src="https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white"/>
+  <img alt="AWS" src="https://img.shields.io/badge/AWS-FF9900?style=for-the-badge&logo=amazon-aws&logoColor=white"/>
+  <img alt="Jenkins" src="https://img.shields.io/badge/Jenkins-D24939?style=for-the-badge&logo=jenkins&logoColor=white"/>
 </div>
 
 ---
@@ -31,44 +31,42 @@
 ### 📊 GitHub Stats
 
 <div align="center">
-  
-![h2jinee's GitHub stats](https://github-readme-stats.vercel.app/api?username=h2jinee&show_icons=true&theme=vue&hide=issues)
-![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=h2jinee&layout=compact&theme=vue)
-
+  <img src="https://github-readme-stats.vercel.app/api?username=h2jinee&show_icons=true&theme=vue&hide=issues" alt="h2jinee's GitHub Stats"/>
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=h2jinee&layout=compact&theme=vue" alt="Top Languages"/>
 </div>
-
-<!--
----
-
-### 🌟 Top Projects
-
-- [**Project 1**](https://github.com/h2jinee/project1) - 설명을 간단하게 적습니다.
-- [**Project 2**](https://github.com/h2jinee/project2) - 설명을 간단하게 적습니다.
--->
 
 ---
 
 ### 🧩 Solved.ac Stats
 
 <div align="center">
-  
-[![Solved.ac프로필](http://mazassumnida.wtf/api/v2/generate_badge?boj=wjsgmlwls97)](https://solved.ac/wjsgmlwls97)
-<!--
-<img src="http://mazandi.herokuapp.com/api?handle=wjsgmlwls97&theme=warm"/>	
--->
-
+  <a href="https://solved.ac/wjsgmlwls97">
+    <img src="http://mazassumnida.wtf/api/v2/generate_badge?boj=wjsgmlwls97" alt="Solved.ac Profile"/>
+  </a>
+  <!-- 
+    <img src="http://mazandi.herokuapp.com/api?handle=wjsgmlwls97&theme=warm" alt="Solved.ac Heatmap"/>
+  -->
 </div>
 
+---
+
+![](./profile-3d-contrib/profile-green-animate.svg)
+
+
+<br>
+<br>
 <br>
 <br>
 
 <div align="center">
-
-[![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Fh2jinee&bg=23C0E8FF&text=23C0E8FF&logo=23E7E7E7)](https://hits.seeyoufarm.com)
-
-<!-- 
-[![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Fh2jinee%2Fhit-counter&count_bg=%23C0E8FF&title_bg=%23C0E8FF&icon=&icon_color=%23E7E7E7&title=hits&edge_flat=false)](https://hits.seeyoufarm.com)
--->
-
+  <a href="https://github.com/devxb/gitanimals">
+    <img src="https://render.gitanimals.org/lines/h2jinee?pet-id=625173881033577834" width="1000" height="200" alt="GitAnimals Pet"/>
+  </a>
 </div>
 
+
+<div align="center">
+  <a href="https://hits.seeyoufarm.com">
+    <img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Fh2jinee&bg=23C0E8FF&text=23C0E8FF&logo=23E7E7E7" alt="Hits"/>
+  </a>
+</div>
