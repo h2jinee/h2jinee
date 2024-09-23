@@ -40,29 +40,18 @@
 
 ---
 
-## 📕 Latest Blog Articles
+### 📕 Latest Blog Posts
 | No. | Title |
 |-----|-------|
 | 1 | [Oracle Client 그리고 JDBC  ](https://hoojjang.tistory.com/2) |
 
 ---
 
----
-## 📕 Latest Blog Posts
-| No. | Title |
-|-----|-------|
-| 1 | [Oracle Client 그리고 JDBC  ](https://hoojjang.tistory.com/2) |
 ### 📊 GitHub Stats
-
-<div align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=h2jinee&show_icons=true&theme=vue&hide=issues" alt="h2jinee's GitHub Stats"/>
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=h2jinee&layout=compact&theme=vue" alt="Top Languages"/>
-</div>
-
----
 
 ![](./profile-3d-contrib/profile-green-animate.svg)
 
+---
 
 <br>
 <br>
