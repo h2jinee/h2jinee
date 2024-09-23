@@ -27,20 +27,24 @@ async function updateReadme() {
         
         let readme = readFileSync('README.md', 'utf-8');
         
-        const startMark = '## 📕 Latest Blog Posts';
-        const endMark = '![](./profile-3d-contrib/profile-green-animate.svg)';
+        const solvedAcStatsEnd = '</div>';
+        const githubStatsStart = '### 📊 GitHub Stats';
         
-        const startIndex = readme.indexOf(startMark);
-        const endIndex = readme.indexOf(endMark);
+        const solvedAcStatsEndIndex = readme.indexOf(solvedAcStatsEnd) + solvedAcStatsEnd.length;
+        const githubStatsStartIndex = readme.indexOf(githubStatsStart);
         
-        if (startIndex !== -1 && endIndex !== -1) {
-            const newSection = `${startMark}
+        if (solvedAcStatsEndIndex !== -1 && githubStatsStartIndex !== -1) {
+            const newSection = `
+
+---
+## 📕 Latest Blog Articles
 | No. | Title |
 |-----|-------|
 ${blogPosts}
 
+---
 `;
-            readme = readme.slice(0, startIndex) + newSection + readme.slice(endIndex);
+            readme = readme.slice(0, solvedAcStatsEndIndex) + newSection + readme.slice(githubStatsStartIndex);
             
             writeFileSync('README.md', readme, 'utf8');
             console.log('README가 성공적으로 업데이트되었습니다');
