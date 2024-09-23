@@ -10,44 +10,45 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
+        with:
+          fetch-depth: 0  # 전체 히스토리를 가져옵니다
       - uses: actions/setup-node@v3
         with:
-          node-version: 16  # Node.js 버전을 16으로 변경
-      - name: Check for package.json
-        run: |
-          if [ ! -f package.json ]; then
-            echo "package.json not found. Creating a basic one."
-            echo '{"name":"github-profile-readme-updater","dependencies":{"rss-parser":"^3.12.0"}}' > package.json
-          fi
+          node-version: 16
       - name: Install dependencies
-        run: |
-          npm install
+        run: npm install
       - name: Update README
         run: node update-readme.js
-      - name: Check if there are any changes
-        id: verify_diff
+      - name: Check for changes
+        id: git-check
         run: |
-          git diff --quiet . || echo "changed=true" >> $GITHUB_OUTPUT
+          git diff --exit-code || echo "changes=true" >> $GITHUB_OUTPUT
       - name: Commit README changes
-        if: steps.verify_diff.outputs.changed == 'true'
+        if: steps.git-check.outputs.changes == 'true'
         run: |
           git config --local user.email "wjsgmlwls97@gmail.com"
           git config --local user.name "h2jinee"
           git add README.md
-          git commit -m "README.md 최신 블로그 포스트로 업데이트"
-          git push
+          git commit -m "Update README.md with latest blog posts"
+      - name: Push changes
+        if: steps.git-check.outputs.changes == 'true'
+        uses: ad-m/github-push-action@master
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          branch: ${{ github.ref }}
   generate-3d-contrib:
     runs-on: ubuntu-latest
+    needs: update-readme
     steps:
       - uses: actions/checkout@v4
       - uses: yoshi389111/github-profile-3d-contrib@0.7.1
         env:
-          GITHUB_TOKEN: ${{ secrets.TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           USERNAME: ${{ github.repository_owner }}
       - name: Commit & Push all changes
         run: |
           git config user.name h2jinee
           git config user.email wjsgmlwls97@gmail.com
           git add -A .
-          git commit -m "README 업데이트 및 3D 기여 그래프 생성" || echo "커밋할 변경사항 없음"
+          git commit -m "Update README and generate 3D contribution graph" || echo "No changes to commit"
           git push
