@@ -59,6 +59,12 @@
 | No. | Title |
 |-----|-------|
 | 1 | [Oracle Client 그리고 JDBC  ](https://hoojjang.tistory.com/2) |
+
+---
+## 📕 Latest Blog Posts
+| No. | Title |
+|-----|-------|
+| 1 | [Oracle Client 그리고 JDBC  ](https://hoojjang.tistory.com/2) |
 ### 📊 GitHub Stats
 
 ![](./profile-3d-contrib/profile-green-animate.svg)
