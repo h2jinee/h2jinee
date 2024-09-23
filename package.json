@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "GitHub 프로필 README를 최신 블로그 포스트로 업데이트",
   "main": "update-readme.js",
+  "type": "module",
   "scripts": {
     "start": "node update-readme.js"
   },
