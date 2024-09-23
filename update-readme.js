@@ -12,12 +12,18 @@ const BLOG_RSS_URL = 'https://hoojjang.tistory.com/rss';
 async function fetchBlogPosts() {
     try {
         const feed = await parser.parseURL(BLOG_RSS_URL);
-        return feed.items.slice(0, 5).map((item, index) => {
-            return `| ${index + 1} | [${item.title}](${item.link}) |`;
-        }).join('\n');
+        let posts = '';
+        for (let i = 0; i < Math.min(feed.items.length, 10); i++) {
+            const { title, link } = feed.items[i];
+            posts += `| ${i + 1} | [${title}](${link}) |\n`;
+        }
+        if (feed.items.length === 0) {
+            posts = '| - | 게시물이 없습니다. |\n';
+        }
+        return posts;
     } catch (error) {
         console.error('Error fetching blog posts:', error);
-        return '| - | 블로그 포스트를 가져오는 데 실패했습니다. |';
+        return '| - | 블로그 포스트를 가져오는 데 실패했습니다. |\n';
     }
 }
 
@@ -27,26 +33,20 @@ async function updateReadme() {
         
         let readme = readFileSync('README.md', 'utf-8');
         
-        const solvedAcStatsSection = '### 🧩 Solved.ac Stats';
-        const githubStatsSection = '### 📊 GitHub Stats';
+        const startMarker = '### 📕 Latest Blog Posts';
+        const endMarker = '### 📊 GitHub Stats';
         
-        const solvedAcStatsIndex = readme.indexOf(solvedAcStatsSection);
-        const githubStatsIndex = readme.indexOf(githubStatsSection);
+        const startIndex = readme.indexOf(startMarker);
+        const endIndex = readme.indexOf(endMarker);
         
-        if (solvedAcStatsIndex !== -1 && githubStatsIndex !== -1) {
-            const beforeSolvedAc = readme.slice(0, solvedAcStatsIndex);
-            const solvedAcSection = readme.slice(solvedAcStatsIndex, githubStatsIndex);
-            const afterGithubStats = readme.slice(githubStatsIndex);
-
-            const newSection = `
----
-## 📕 Latest Blog Posts
+        if (startIndex !== -1 && endIndex !== -1) {
+            const newSection = `### 📕 Latest Blog Posts
 | No. | Title |
 |-----|-------|
-${blogPosts}
+${blogPosts}---
 `;
             
-            const updatedReadme = beforeSolvedAc + solvedAcSection + newSection + afterGithubStats;
+            const updatedReadme = readme.slice(0, startIndex) + newSection + readme.slice(endIndex);
             
             writeFileSync('README.md', updatedReadme, 'utf8');
             console.log('README가 성공적으로 업데이트되었습니다');
