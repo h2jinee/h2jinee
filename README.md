@@ -27,6 +27,19 @@
 </div>
 
 ---
+
+### 🧩 Solved.ac Stats
+<div align="center">
+  <a href="https://solved.ac/wjsgmlwls97">
+    <img src="http://mazassumnida.wtf/api/v2/generate_badge?boj=wjsgmlwls97" alt="Solved.ac Profile"/>
+  </a>
+  <!-- 
+    <img src="http://mazandi.herokuapp.com/api?handle=wjsgmlwls97&theme=warm" alt="Solved.ac Heatmap"/>
+  -->
+</div>
+
+---
+
 ## 📕 Latest Blog Articles
 | No. | Title |
 |-----|-------|
