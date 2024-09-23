@@ -46,15 +46,23 @@ async function updateReadme() {
 ${blogPosts}---
 `;
             
-            const updatedReadme = readme.slice(0, startIndex) + newSection + readme.slice(endIndex);
-            
-            writeFileSync('README.md', updatedReadme, 'utf8');
-            console.log('README가 성공적으로 업데이트되었습니다');
+            const currentSection = readme.slice(startIndex, endIndex);
+            if (currentSection !== newSection) {
+                const updatedReadme = readme.slice(0, startIndex) + newSection + readme.slice(endIndex);
+                writeFileSync('README.md', updatedReadme, 'utf8');
+                console.log('README가 업데이트되었습니다');
+                process.exit(0);  // 변경사항이 있으면 종료 코드 0
+            } else {
+                console.log('변경사항이 없습니다');
+                process.exit(1);  // 변경사항이 없으면 종료 코드 1
+            }
         } else {
             console.log('README에서 업데이트 지점을 찾을 수 없습니다');
+            process.exit(1);
         }
     } catch (error) {
         console.error('Error updating README:', error);
+        process.exit(1);
     }
 }
 
