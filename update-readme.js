@@ -27,26 +27,28 @@ async function updateReadme() {
         
         let readme = readFileSync('README.md', 'utf-8');
         
-        const solvedAcStatsEnd = '</div>';
-        const githubStatsStart = '### 📊 GitHub Stats';
+        const solvedAcStatsSection = '### 🧩 Solved.ac Stats';
+        const githubStatsSection = '### 📊 GitHub Stats';
         
-        const solvedAcStatsEndIndex = readme.indexOf(solvedAcStatsEnd) + solvedAcStatsEnd.length;
-        const githubStatsStartIndex = readme.indexOf(githubStatsStart);
+        const solvedAcStatsIndex = readme.indexOf(solvedAcStatsSection);
+        const githubStatsIndex = readme.indexOf(githubStatsSection);
         
-        if (solvedAcStatsEndIndex !== -1 && githubStatsStartIndex !== -1) {
-            const newSection = `
+        if (solvedAcStatsIndex !== -1 && githubStatsIndex !== -1) {
+            const beforeSolvedAc = readme.slice(0, solvedAcStatsIndex);
+            const solvedAcSection = readme.slice(solvedAcStatsIndex, githubStatsIndex);
+            const afterGithubStats = readme.slice(githubStatsIndex);
 
+            const newSection = `
 ---
-## 📕 Latest Blog Articles
+## 📕 Latest Blog Posts
 | No. | Title |
 |-----|-------|
 ${blogPosts}
-
----
 `;
-            readme = readme.slice(0, solvedAcStatsEndIndex) + newSection + readme.slice(githubStatsStartIndex);
             
-            writeFileSync('README.md', readme, 'utf8');
+            const updatedReadme = beforeSolvedAc + solvedAcSection + newSection + afterGithubStats;
+            
+            writeFileSync('README.md', updatedReadme, 'utf8');
             console.log('README가 성공적으로 업데이트되었습니다');
         } else {
             console.log('README에서 업데이트 지점을 찾을 수 없습니다');
