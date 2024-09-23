@@ -28,15 +28,6 @@
 
 ---
 
-### 📊 GitHub Stats
-
-<div align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=h2jinee&show_icons=true&theme=vue&hide=issues" alt="h2jinee's GitHub Stats"/>
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=h2jinee&layout=compact&theme=vue" alt="Top Languages"/>
-</div>
-
----
-
 ### 🧩 Solved.ac Stats
 
 <div align="center">
@@ -46,6 +37,15 @@
   <!-- 
     <img src="http://mazandi.herokuapp.com/api?handle=wjsgmlwls97&theme=warm" alt="Solved.ac Heatmap"/>
   -->
+</div>
+
+---
+
+### 📊 GitHub Stats
+
+<div align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=h2jinee&show_icons=true&theme=vue&hide=issues" alt="h2jinee's GitHub Stats"/>
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=h2jinee&layout=compact&theme=vue" alt="Top Languages"/>
 </div>
 
 ---
