@@ -13,26 +13,22 @@ jobs:
     steps:
       - uses: actions/checkout@v3
         with:
-          fetch-depth: 0
+          fetch-depth: 0  # 전체 히스토리를 가져옵니다
+      
+      - name: Fetch latest changes
+        run: |
+          git fetch --all
+          git pull origin main
+      
       - uses: actions/setup-node@v3
         with:
           node-version: 20
       
       # README 업데이트
-      - name: Check if package.json exists
-        id: check_files
-        uses: andstor/file-existence-action@v1
-        with:
-          files: "package.json"
-
       - name: Install dependencies
-        if: steps.check_files.outputs.files_exists == 'true'
-        run: | 
-          npm install
-          npm install rss-parser
-
+        run: npm install
+      
       - name: Update README
-        if: steps.check_files.outputs.files_exists == 'true'
         run: npm start
 
       - name: Check README changes
@@ -41,11 +37,14 @@ jobs:
           git diff --quiet README.md || echo "readme_changed=true" >> $GITHUB_OUTPUT
       
       # 3D Contribution 생성
-      - uses: yoshi389111/github-profile-3d-contrib@0.7.1
+      - name: Generate 3D Contrib
+        uses: yoshi389111/github-profile-3d-contrib@0.7.1
         env:
           GITHUB_TOKEN: ${{ secrets.TOKEN }}
           USERNAME: ${{ github.repository_owner }}
-
+          MAX_REPOS: 250
+          SETTING_JSON: conf/github-profile-3d-contrib.json
+        
       - name: Check 3D Contrib changes
         id: contrib_diff
         run: |
@@ -58,5 +57,5 @@ jobs:
           git config user.name h2jinee
           git config user.email wjsgmlwls97@gmail.com
           git add README.md profile-3d-contrib
-          git commit -m "Update README and 3D contribution graph" || echo "No changes to commit"
+          git commit -m "Update README and 3D contribution graph"
           git push https://${{ secrets.TOKEN }}@github.com/h2jinee/h2jinee.git
