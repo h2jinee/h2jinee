@@ -19,12 +19,22 @@ jobs:
           node-version: 20
       
       # README 업데이트
+      - name: Check if package.json exists
+        id: check_files
+        uses: andstor/file-existence-action@v1
+        with:
+          files: "package.json"
+
       - name: Install dependencies
+        if: steps.check_files.outputs.files_exists == 'true'
         run: | 
-          npm ci
+          npm install
           npm install rss-parser
+
       - name: Update README
+        if: steps.check_files.outputs.files_exists == 'true'
         run: npm start
+
       - name: Check README changes
         id: readme_diff
         run: |
@@ -35,6 +45,7 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.TOKEN }}
           USERNAME: ${{ github.repository_owner }}
+
       - name: Check 3D Contrib changes
         id: contrib_diff
         run: |
