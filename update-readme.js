@@ -6,7 +6,6 @@ const parser = new Parser({
         Accept: 'application/rss+xml, application/xml, text/xml; q=0.1',
     }
 });
-
 const BLOG_RSS_URL = 'https://hoojjang.tistory.com/rss';
 
 async function fetchBlogPosts() {
@@ -50,14 +49,12 @@ ${blogPosts}---
             if (currentSection !== newSection) {
                 const updatedReadme = readme.slice(0, startIndex) + newSection + readme.slice(endIndex);
                 writeFileSync('README.md', updatedReadme, 'utf8');
-                console.log('README가 업데이트되었습니다');
-                process.exit(0);  // 변경사항이 있으면 종료 코드 0
+                console.log('README_UPDATED=true');
             } else {
-                console.log('변경사항이 없습니다');
-                process.exit(1);  // 변경사항이 없으면 종료 코드 1
+                console.log('README_UPDATED=false');
             }
         } else {
-            console.log('README에서 업데이트 지점을 찾을 수 없습니다');
+            console.error('README에서 업데이트 지점을 찾을 수 없습니다');
             process.exit(1);
         }
     } catch (error) {
