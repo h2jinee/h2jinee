@@ -1,4 +1,5 @@
 name: Update Profile README
+
 on:
   schedule:
     - cron: "0 */1 * * *"  # 매 시간마다 실행
@@ -13,6 +14,11 @@ jobs:
       - uses: actions/checkout@v3
         with:
           fetch-depth: 0  # 전체 히스토리를 가져옵니다
+
+      - name: Set up Git
+        run: |
+          git config --global user.name "h2jinee"
+          git config --global user.email "wjsgmlwls97@gmail.com"
 
       - name: Fetch latest changes
         run: |
@@ -48,7 +54,6 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.TOKEN }}
           USERNAME: ${{ github.repository_owner }}
-          # 시간대 설정 (예: 한국 시간)
           TZ: 'Asia/Seoul'
 
       - name: Check 3D Contrib changes
@@ -60,10 +65,8 @@ jobs:
       - name: Commit and push changes
         if: steps.update_readme.outputs.readme_updated == 'true' || steps.contrib_diff.outputs.contrib_changed == 'true'
         run: |
-          git config user.name h2jinee
-          git config user.email wjsgmlwls97@gmail.com
           git add README.md profile-3d-contrib
-          git commit -m "Update README and 3D contribution graph"
+          git commit -m "Update Profile README"
           git push origin main
 
       - name: No changes
