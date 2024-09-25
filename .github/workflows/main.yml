@@ -29,12 +29,13 @@ jobs:
         run: npm install
       
       - name: Update README
-        run: npm start
-
-      - name: Check README changes
-        id: readme_diff
+        id: update_readme
         run: |
-          git diff --quiet README.md || echo "readme_changed=true" >> $GITHUB_OUTPUT
+          output=$(node update-readme.js)
+          echo "$output"
+          if echo "$output" | grep -q "README_UPDATED=true"; then
+            echo "readme_updated=true" >> $GITHUB_OUTPUT
+          fi
       
       # 3D Contribution 생성
       - name: Generate 3D Contrib
@@ -52,10 +53,14 @@ jobs:
       
       # 변경사항 커밋 및 푸시
       - name: Commit and push changes
-        if: steps.readme_diff.outputs.readme_changed == 'true' || steps.contrib_diff.outputs.contrib_changed == 'true'
+        if: steps.update_readme.outputs.readme_updated == 'true' || steps.contrib_diff.outputs.contrib_changed == 'true'
         run: |
           git config user.name h2jinee
           git config user.email wjsgmlwls97@gmail.com
           git add README.md profile-3d-contrib
           git commit -m "Update README and 3D contribution graph"
           git push https://${{ secrets.TOKEN }}@github.com/h2jinee/h2jinee.git
+      
+      - name: No changes
+        if: steps.update_readme.outputs.readme_updated != 'true' && steps.contrib_diff.outputs.contrib_changed != 'true'
+        run: echo "No changes were made to README or 3D contribution graph."
