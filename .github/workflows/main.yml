@@ -44,6 +44,7 @@ jobs:
 
       # GitHub 데이터 강제 새로고침
       - name: Force GitHub data refresh
+        if: steps.update_readme.outputs.readme_updated == 'true' || steps.contrib_diff.outputs.contrib_changed == 'true'
         run: |
           git commit --allow-empty -m "Force refresh GitHub data"
           git push origin main
