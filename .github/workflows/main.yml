@@ -76,6 +76,7 @@ jobs:
 
       # GitHub Pages 캐시 갱신
       - name: Purge GitHub Pages cache
+        if: steps.update_readme.outputs.readme_updated == 'true' || steps.contrib_diff.outputs.contrib_changed == 'true'
         run: |
           curl -X POST \
             -H "Authorization: token ${{ secrets.TOKEN }}" \
