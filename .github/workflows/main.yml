@@ -1,12 +1,10 @@
 name: Update Profile README
-
 on:
   schedule:
     - cron: "0 */1 * * *"  # 매 시간마다 실행
   workflow_dispatch:  # 수동 실행 옵션
   push:
     branches: [ main ]
-
 jobs:
   update-readme-and-3d-contrib:
     runs-on: ubuntu-latest
@@ -14,25 +12,20 @@ jobs:
       - uses: actions/checkout@v3
         with:
           fetch-depth: 0  # 전체 히스토리를 가져옵니다
-
       - name: Set up Git
         run: |
           git config --global user.name "h2jinee"
           git config --global user.email "wjsgmlwls97@gmail.com"
-
       - name: Fetch latest changes
         run: |
           git fetch --all
           git pull origin main
-
       - uses: actions/setup-node@v3
         with:
           node-version: 20
-
       # README 업데이트
       - name: Install dependencies
         run: npm install
-
       - name: Update README
         id: update_readme
         run: |
@@ -41,14 +34,6 @@ jobs:
           if echo "$output" | grep -q "README_UPDATED=true"; then
             echo "readme_updated=true" >> $GITHUB_OUTPUT
           fi
-
-      # GitHub 데이터 강제 새로고침
-      - name: Force GitHub data refresh
-        if: steps.update_readme.outputs.readme_updated == 'true' || steps.contrib_diff.outputs.contrib_changed == 'true'
-        run: |
-          git commit --allow-empty -m "Force refresh GitHub data"
-          git push origin main
-
       # 3D Contribution 생성
       - name: Generate 3D Contrib
         uses: yoshi389111/github-profile-3d-contrib@0.7.1
@@ -56,12 +41,10 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.TOKEN }}
           USERNAME: ${{ github.repository_owner }}
           TZ: 'Asia/Seoul'
-
       - name: Check 3D Contrib changes
         id: contrib_diff
         run: |
           git diff --quiet profile-3d-contrib || echo "contrib_changed=true" >> $GITHUB_OUTPUT
-
       # 변경사항 커밋 및 푸시
       - name: Commit and push changes
         if: steps.update_readme.outputs.readme_updated == 'true' || steps.contrib_diff.outputs.contrib_changed == 'true'
@@ -69,12 +52,10 @@ jobs:
           git add README.md profile-3d-contrib
           git commit -m "Update Profile README"
           git push origin main
-
       - name: No changes
         if: steps.update_readme.outputs.readme_updated != 'true' && steps.contrib_diff.outputs.contrib_changed != 'true'
         run: echo "No changes were made to README or 3D contribution graph."
-
-      # GitHub Pages 캐시 갱신
+      # GitHub Pages 캐시 갱신 (실제 변경사항이 있을 때만)
       - name: Purge GitHub Pages cache
         if: steps.update_readme.outputs.readme_updated == 'true' || steps.contrib_diff.outputs.contrib_changed == 'true'
         run: |
