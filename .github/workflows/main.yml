@@ -44,7 +44,7 @@ jobs:
       - name: Check 3D Contrib changes
         id: contrib_diff
         run: |
-          git diff --quiet profile-3d-contrib || echo "contrib_changed=true" >> $GITHUB_OUTPUT
+          git diff --ignore-timestamp --quiet profile-3d-contrib || echo "contrib_changed=true" >> $GITHUB_OUTPUT
       # 변경사항 커밋 및 푸시
       - name: Commit and push changes
         if: steps.update_readme.outputs.readme_updated == 'true' || steps.contrib_diff.outputs.contrib_changed == 'true'
