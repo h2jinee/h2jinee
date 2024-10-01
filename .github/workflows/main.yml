@@ -1,71 +1,45 @@
-name: Update Profile README
+# This is a basic workflow to help you get started with Actions
+
+name: Readme Update
+
+# Controls when the workflow will run
 on:
-  schedule:
-    - cron: "0 */1 * * *"  # 매 시간마다 실행
-  workflow_dispatch:  # 수동 실행 옵션
   push:
     branches: [ main ]
+  pull_request:
+    branches: [ main ]
+  # 1시간에 한번씩 아래 스크립트를 실행한다.
+  schedule:
+    - cron: "0 */1 * * *"
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
-  update-readme-and-3d-contrib:
+  # This workflow contains a single job called "build"
+  build:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-        with:
-          fetch-depth: 0  # 전체 히스토리를 가져옵니다
-      - name: Set up Git
-        run: |
-          git config --global user.name "h2jinee"
-          git config --global user.email "wjsgmlwls97@gmail.com"
-      - name: Fetch latest changes
-        run: |
-          git fetch --all
-          git pull origin main
       - uses: actions/setup-node@v3
         with:
           node-version: 20
-      # README 업데이트
+
       - name: Install dependencies
-        run: npm install
+        run: | 
+          npm ci
+          npm install rss-parser
+
       - name: Update README
-        id: update_readme
+        run: npm start
+
+      - name: Check if there are any changes
+        id: verify_diff
         run: |
-          output=$(node update-readme.js)
-          echo "$output"
-          if echo "$output" | grep -q "README_UPDATED=true"; then
-            echo "readme_updated=true" >> $GITHUB_OUTPUT
-          fi
-      # 3D Contribution 생성
-      - name: Generate 3D Contrib
-        uses: yoshi389111/github-profile-3d-contrib@0.7.1
-        env:
-          GITHUB_TOKEN: ${{ secrets.TOKEN }}
-          USERNAME: ${{ github.repository_owner }}
-          TZ: 'Asia/Seoul'
-      - name: Check 3D Contrib changes
-        id: contrib_diff
+          git diff --quiet . || echo "changed=true" >> $GITHUB_OUTPUT
+
+      - name: Commit README
+        if: steps.verify_diff.outputs.changed == 'true'
         run: |
-          # 파일 내용의 실제 변경 여부를 확인합니다
-          if git diff --exit-code --ignore-space-at-eol profile-3d-contrib/; then
-            echo "No changes in 3D contribution graph content."
-          else
-            echo "contrib_changed=true" >> $GITHUB_OUTPUT
-            echo "Changes detected in 3D contribution graph content."
-          fi
-      # 변경사항 커밋 및 푸시
-      - name: Commit and push changes
-        if: steps.update_readme.outputs.readme_updated == 'true' || steps.contrib_diff.outputs.contrib_changed == 'true'
-        run: |
-          git add README.md profile-3d-contrib
-          git commit -m "Update Profile README"
+          git config --local user.email "wjsgmlwls97@gmail.com"
+          git config --local user.name "h2jinee"
+          git add .
+          git commit -m "Update README.md"
           git push origin main
-      - name: No changes
-        if: steps.update_readme.outputs.readme_updated != 'true' && steps.contrib_diff.outputs.contrib_changed != 'true'
-        run: echo "No changes were made to README or 3D contribution graph."
-      # GitHub Pages 캐시 갱신 (실제 변경사항이 있을 때만)
-      - name: Purge GitHub Pages cache
-        if: steps.update_readme.outputs.readme_updated == 'true' || steps.contrib_diff.outputs.contrib_changed == 'true'
-        run: |
-          curl -X POST \
-            -H "Authorization: token ${{ secrets.TOKEN }}" \
-            -H "Accept: application/vnd.github.v3+json" \
-            https://api.github.com/repos/${{ github.repository }}/pages/builds
