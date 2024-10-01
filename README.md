@@ -1,7 +1,7 @@
+
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:faffc0,10:e1ffc0,30:c0ffde,75:c0fffd,100:c0e8ff&height=100&section=header&text=&fontSize=0" width="100%"/>
 
 ### Hi there 👋
-
 ---
 
 ### 🚀 About Me
@@ -30,22 +30,17 @@
 ---
 
 ### 🧩 Solved.ac Stats
-
 <div align="center">
   <a href="https://solved.ac/wjsgmlwls97">
     <img src="http://mazassumnida.wtf/api/v2/generate_badge?boj=wjsgmlwls97" alt="Solved.ac Profile"/>
   </a>
-  <!-- 
-    <img src="http://mazandi.herokuapp.com/api?handle=wjsgmlwls97&theme=warm" alt="Solved.ac Heatmap"/>
-  -->
 </div>
 
 ### 📕 Latest Blog Posts
-
-| No. | Title                                                               |
-| --- | ------------------------------------------------------------------- |
-| 1   | [[프로그래머스 / Java] 무인도 여행](https://hoojjang.tistory.com/3) |
-| 2   | [Oracle Client 그리고 JDBC ](https://hoojjang.tistory.com/2)        |
+| No. | Title |
+|-----|-------|
+| 1 | [[프로그래머스 / Java] 무인도 여행](https://hoojjang.tistory.com/3) |
+| 2 | [Oracle Client 그리고 JDBC  ](https://hoojjang.tistory.com/2) |
 
 ---
 
