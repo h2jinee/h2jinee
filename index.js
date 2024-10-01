@@ -43,6 +43,8 @@ let text = `
   </a>
 </div>
 
+---
+
 ### 📕 Latest Blog Posts
 | No. | Title |
 |-----|-------|
