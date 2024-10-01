@@ -1,13 +1,11 @@
 import { readFileSync, writeFileSync } from 'node:fs';
 import Parser from "rss-parser";
-
 const parser = new Parser({
     headers: {
         Accept: 'application/rss+xml, application/xml, text/xml; q=0.1',
     }
 });
 const BLOG_RSS_URL = 'https://hoojjang.tistory.com/rss';
-
 async function fetchBlogPosts() {
     try {
         const feed = await parser.parseURL(BLOG_RSS_URL);
@@ -25,7 +23,6 @@ async function fetchBlogPosts() {
         return '| - | 블로그 포스트를 가져오는 데 실패했습니다. |\n';
     }
 }
-
 async function updateReadme() {
     try {
         const blogPosts = await fetchBlogPosts();
@@ -33,7 +30,7 @@ async function updateReadme() {
         let readme = readFileSync('README.md', 'utf-8');
         
         const startMarker = '### 📕 Latest Blog Posts';
-        const endMarker = '### 📊 GitHub Stats';
+        const endMarker = '<div align="center">';
         
         const startIndex = readme.indexOf(startMarker);
         const endIndex = readme.indexOf(endMarker);
@@ -62,5 +59,4 @@ ${blogPosts}---
         process.exit(1);
     }
 }
-
 updateReadme();
