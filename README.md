@@ -36,6 +36,8 @@
   </a>
 </div>
 
+---
+
 ### 📕 Latest Blog Posts
 | No. | Title |
 |-----|-------|
