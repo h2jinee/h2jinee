@@ -46,11 +46,7 @@
 | 1 | [[프로그래머스 / Java] 무인도 여행](https://hoojjang.tistory.com/3) |
 | 2 | [Oracle Client 그리고 JDBC  ](https://hoojjang.tistory.com/2) |
 ---
-### 📊 GitHub Stats
 
-![](./profile-3d-contrib/profile-green-animate.svg)
-
----
 
 <div align="center">
   <a href="https://github.com/devxb/gitanimals">
