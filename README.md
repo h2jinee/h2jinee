@@ -1,6 +1,8 @@
 
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:faffc0,10:e1ffc0,30:c0ffde,75:c0fffd,100:c0e8ff&height=100&section=header&text=&fontSize=0" width="100%"/>
 
+<img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Ghost.png" alt="Ghost" width="100" height="100" />
+
 ### Hi there 👋
 ---
 
@@ -16,7 +18,15 @@
 
 ### 🛠 Tech Stack
 
+<p align="center">
+  <a href="https://skillicons.dev">
+    <img src="https://skillicons.dev/icons?i=java,flutter,spring,mysql,postgres,aws,jenkins" />
+  </a>
+</p>
+
 <div align="center">
+  
+
   <img alt="Java" src="https://img.shields.io/badge/Java-007396.svg?&style=for-the-badge&logo=Java&logoColor=white"/>
   <img alt="Flutter" src="https://img.shields.io/badge/Flutter-02569B?style=for-the-badge&logo=flutter&logoColor=white"/>
   <img alt="Spring" src="https://img.shields.io/badge/Spring-6DB33F?style=for-the-badge&logo=spring&logoColor=white"/>
