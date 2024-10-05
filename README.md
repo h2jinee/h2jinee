@@ -18,12 +18,6 @@
 
 ### 🛠 Tech Stack
 
-<p align="center">
-  <a href="https://skillicons.dev">
-    <img src="https://skillicons.dev/icons?i=java,flutter,spring,mysql,postgres,aws,jenkins" />
-  </a>
-</p>
-
 <div align="center">
   
 
