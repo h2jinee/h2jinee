@@ -50,9 +50,15 @@
 
 <div align="center">
   <a href="https://github.com/devxb/gitanimals">
-    <img src="https://render.gitanimals.org/lines/h2jinee?pet-id=625173881033577834" width="1000" height="200" alt="GitAnimals Pet"/>
+  <img
+    src="https://render.gitanimals.org/farms/h2jinee"
+    width="1000"
+    height="300"
+  />
   </a>
 </div>
+
+<br>
 
 <div align="center">
   <a href="https://hits.seeyoufarm.com">
