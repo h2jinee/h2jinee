@@ -44,16 +44,16 @@
 ### 📕 Latest Blog Posts
 | No. | Title |
 |-----|-------|
-| 1 | [[F-Lab] Java Backend 멘토링 2개월 후기](https://hoojjang.tistory.com/24) |
-| 2 | [[F-Lab] Java Backend 멘토링 1개월 후기](https://hoojjang.tistory.com/23) |
-| 3 | [가비지 컬렉터 G1 GC  ️](https://hoojjang.tistory.com/17) |
-| 4 | [HotSpot VM과 JIT 컴파일러 ](https://hoojjang.tistory.com/18) |
-| 5 | [[F-Lab] Java Backend 멘토링 시작 그리고 나의 커리어](https://hoojjang.tistory.com/15) |
-| 6 | [JVM과 Class가 JVM에 로딩되는 과정  ](https://hoojjang.tistory.com/14) |
-| 7 | [[Clean Code] Chapter 7 - 오류 처리](https://hoojjang.tistory.com/13) |
-| 8 | [[Clean Code] Chapter 6 - 객체와 자료 구조](https://hoojjang.tistory.com/12) |
-| 9 | [[Clean Code] Chapter 5 - 형식 맞추기](https://hoojjang.tistory.com/11) |
-| 10 | [[Clean Code] Chapter 4 - 주석](https://hoojjang.tistory.com/10) |
+| 1 | [VO(Value Object) 값 객체 제대로 이해하기](https://hoojjang.tistory.com/30) |
+| 2 | [[Loop:PAK] WIL 2주차](https://hoojjang.tistory.com/29) |
+| 3 | [DB 없이 E2E 테스트 작성하기 (feat. Repository 안티패턴과 해결법)](https://hoojjang.tistory.com/28) |
+| 4 | [[Loop:PAK] WIL 1주차](https://hoojjang.tistory.com/27) |
+| 5 | [운영체제 프로세스와 스레드  ](https://hoojjang.tistory.com/19) |
+| 6 | [[F-Lab] Java Backend 멘토링 2개월 후기](https://hoojjang.tistory.com/24) |
+| 7 | [[F-Lab] Java Backend 멘토링 1개월 후기](https://hoojjang.tistory.com/23) |
+| 8 | [가비지 컬렉터 G1 GC  ️](https://hoojjang.tistory.com/17) |
+| 9 | [HotSpot VM과 JIT 컴파일러 ](https://hoojjang.tistory.com/18) |
+| 10 | [[F-Lab] Java Backend 멘토링 시작 그리고 나의 커리어](https://hoojjang.tistory.com/15) |
 
 ---
 
@@ -68,3 +68,9 @@
 </div>
 
 <br>
+
+<div align="center">
+  <a href="https://hits.seeyoufarm.com">
+    <img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Fh2jinee&bg=23C0E8FF&text=23C0E8FF&logo=23E7E7E7" alt="Hits"/>
+  </a>
+</div>
