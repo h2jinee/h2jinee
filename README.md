@@ -44,7 +44,7 @@
 ### 📕 Latest Blog Posts
 | No. | Title |
 |-----|-------|
-| 1 | [MySQL 인덱스 최적화로 쿼리 성능 600배 개선한 이야기](https://hoojjang.tistory.com/32) |
+| 1 | [MySQL 인덱스 최적화로 쿼리 성능 600배 이상 개선한 이야기](https://hoojjang.tistory.com/32) |
 | 2 | [VO(Value Object) 값 객체 제대로 이해하기](https://hoojjang.tistory.com/30) |
 | 3 | [[Loop:PAK] WIL 2주차](https://hoojjang.tistory.com/29) |
 | 4 | [DB 없이 E2E 테스트 작성하기 (feat. Repository 안티패턴과 해결법)](https://hoojjang.tistory.com/28) |
