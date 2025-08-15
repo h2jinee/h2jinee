@@ -44,16 +44,16 @@
 ### 📕 Latest Blog Posts
 | No. | Title |
 |-----|-------|
-| 1 | [VO(Value Object) 값 객체 제대로 이해하기](https://hoojjang.tistory.com/30) |
-| 2 | [[Loop:PAK] WIL 2주차](https://hoojjang.tistory.com/29) |
-| 3 | [DB 없이 E2E 테스트 작성하기 (feat. Repository 안티패턴과 해결법)](https://hoojjang.tistory.com/28) |
-| 4 | [[Loop:PAK] WIL 1주차](https://hoojjang.tistory.com/27) |
-| 5 | [운영체제 프로세스와 스레드  ](https://hoojjang.tistory.com/19) |
-| 6 | [[F-Lab] Java Backend 멘토링 2개월 후기](https://hoojjang.tistory.com/24) |
-| 7 | [[F-Lab] Java Backend 멘토링 1개월 후기](https://hoojjang.tistory.com/23) |
-| 8 | [가비지 컬렉터 G1 GC  ️](https://hoojjang.tistory.com/17) |
-| 9 | [HotSpot VM과 JIT 컴파일러 ](https://hoojjang.tistory.com/18) |
-| 10 | [[F-Lab] Java Backend 멘토링 시작 그리고 나의 커리어](https://hoojjang.tistory.com/15) |
+| 1 | [MySQL 인덱스 최적화로 쿼리 성능 600배 개선한 이야기](https://hoojjang.tistory.com/32) |
+| 2 | [VO(Value Object) 값 객체 제대로 이해하기](https://hoojjang.tistory.com/30) |
+| 3 | [[Loop:PAK] WIL 2주차](https://hoojjang.tistory.com/29) |
+| 4 | [DB 없이 E2E 테스트 작성하기 (feat. Repository 안티패턴과 해결법)](https://hoojjang.tistory.com/28) |
+| 5 | [[Loop:PAK] WIL 1주차](https://hoojjang.tistory.com/27) |
+| 6 | [운영체제 프로세스와 스레드  ](https://hoojjang.tistory.com/19) |
+| 7 | [[F-Lab] Java Backend 멘토링 2개월 후기](https://hoojjang.tistory.com/24) |
+| 8 | [[F-Lab] Java Backend 멘토링 1개월 후기](https://hoojjang.tistory.com/23) |
+| 9 | [가비지 컬렉터 G1 GC  ️](https://hoojjang.tistory.com/17) |
+| 10 | [HotSpot VM과 JIT 컴파일러 ](https://hoojjang.tistory.com/18) |
 
 ---
 
