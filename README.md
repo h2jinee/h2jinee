@@ -45,16 +45,16 @@
 ### 📕 Latest Blog Posts
 | No. | Title |
 |-----|-------|
-| 1 | [관심사의 분리가 만들어낸 레이어 지옥, 이벤트로 해결하기](https://hoojjang.tistory.com/33) |
-| 2 | [MySQL 인덱스 최적화로 쿼리 성능 600배 이상 개선한 이야기](https://hoojjang.tistory.com/32) |
-| 3 | [VO(Value Object) 값 객체 제대로 이해하기](https://hoojjang.tistory.com/30) |
-| 4 | [[Loop:PAK] WIL 2주차](https://hoojjang.tistory.com/29) |
-| 5 | [DB 없이 E2E 테스트 작성하기 (feat. Repository 안티패턴과 해결법)](https://hoojjang.tistory.com/28) |
-| 6 | [[Loop:PAK] WIL 1주차](https://hoojjang.tistory.com/27) |
-| 7 | [운영체제 프로세스와 스레드  ](https://hoojjang.tistory.com/19) |
-| 8 | [[F-Lab] Java Backend 멘토링 2개월 후기](https://hoojjang.tistory.com/24) |
-| 9 | [[F-Lab] Java Backend 멘토링 1개월 후기](https://hoojjang.tistory.com/23) |
-| 10 | [가비지 컬렉터 G1 GC  ️](https://hoojjang.tistory.com/17) |
+| 1 | [카프카는 왜 필요할까? @EventListener의 한계와 카프카로 극복하기](https://hoojjang.tistory.com/34) |
+| 2 | [관심사의 분리가 만들어낸 레이어 지옥, 이벤트로 해결하기](https://hoojjang.tistory.com/33) |
+| 3 | [MySQL 인덱스 최적화로 쿼리 성능 600배 이상 개선한 이야기](https://hoojjang.tistory.com/32) |
+| 4 | [VO(Value Object) 값 객체 제대로 이해하기](https://hoojjang.tistory.com/30) |
+| 5 | [[Loop:PAK] WIL 2주차](https://hoojjang.tistory.com/29) |
+| 6 | [DB 없이 E2E 테스트 작성하기 (feat. Repository 안티패턴과 해결법)](https://hoojjang.tistory.com/28) |
+| 7 | [[Loop:PAK] WIL 1주차](https://hoojjang.tistory.com/27) |
+| 8 | [운영체제 프로세스와 스레드  ](https://hoojjang.tistory.com/19) |
+| 9 | [[F-Lab] Java Backend 멘토링 2개월 후기](https://hoojjang.tistory.com/24) |
+| 10 | [[F-Lab] Java Backend 멘토링 1개월 후기](https://hoojjang.tistory.com/23) |
 
 ---
 
