@@ -45,16 +45,16 @@
 ### 📕 Latest Blog Posts
 | No. | Title |
 |-----|-------|
-| 1 | [Redis ZSET으로 구현한 랭킹 시스템에서 발생할 수 있는 문제들](https://hoojjang.tistory.com/35) |
-| 2 | [카프카는 왜 필요할까? @EventListener의 한계와 카프카로 극복하기](https://hoojjang.tistory.com/34) |
-| 3 | [관심사의 분리가 만들어낸 레이어 지옥, 이벤트로 해결하기](https://hoojjang.tistory.com/33) |
-| 4 | [MySQL 인덱스 최적화로 쿼리 성능 600배 이상 개선한 이야기](https://hoojjang.tistory.com/32) |
-| 5 | [VO(Value Object) 값 객체 제대로 이해하기](https://hoojjang.tistory.com/30) |
-| 6 | [[Loop:PAK] WIL 2주차](https://hoojjang.tistory.com/29) |
-| 7 | [DB 없이 E2E 테스트 작성하기 (feat. Repository 안티패턴과 해결법)](https://hoojjang.tistory.com/28) |
-| 8 | [[Loop:PAK] WIL 1주차](https://hoojjang.tistory.com/27) |
-| 9 | [운영체제 프로세스와 스레드  ](https://hoojjang.tistory.com/19) |
-| 10 | [[F-Lab] Java Backend 멘토링 2개월 후기](https://hoojjang.tistory.com/24) |
+| 1 | [10주동안 이커머스 프로젝트를 만들며 깨달은 것들](https://hoojjang.tistory.com/37) |
+| 2 | [Redis ZSET으로 구현한 랭킹 시스템에서 발생할 수 있는 문제들](https://hoojjang.tistory.com/35) |
+| 3 | [카프카는 왜 필요할까? @EventListener의 한계와 카프카로 극복하기](https://hoojjang.tistory.com/34) |
+| 4 | [관심사의 분리가 만들어낸 레이어 지옥, 이벤트로 해결하기](https://hoojjang.tistory.com/33) |
+| 5 | [MySQL 인덱스 최적화로 쿼리 성능 600배 이상 개선한 이야기](https://hoojjang.tistory.com/32) |
+| 6 | [VO(Value Object) 값 객체 제대로 이해하기](https://hoojjang.tistory.com/30) |
+| 7 | [[Loop:PAK] WIL 2주차](https://hoojjang.tistory.com/29) |
+| 8 | [DB 없이 E2E 테스트 작성하기 (feat. Repository 안티패턴과 해결법)](https://hoojjang.tistory.com/28) |
+| 9 | [[Loop:PAK] WIL 1주차](https://hoojjang.tistory.com/27) |
+| 10 | [운영체제 프로세스와 스레드  ](https://hoojjang.tistory.com/19) |
 
 ---
 
