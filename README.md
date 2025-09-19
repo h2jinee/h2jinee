@@ -45,7 +45,7 @@
 ### 📕 Latest Blog Posts
 | No. | Title |
 |-----|-------|
-| 1 | [10주동안 이커머스 프로젝트를 만들며 깨달은 것들](https://hoojjang.tistory.com/37) |
+| 1 | [10주동안 이커머스 프로젝트를 진행하며 깨달은 것들](https://hoojjang.tistory.com/37) |
 | 2 | [Redis ZSET으로 구현한 랭킹 시스템에서 발생할 수 있는 문제들](https://hoojjang.tistory.com/35) |
 | 3 | [카프카는 왜 필요할까? @EventListener의 한계와 카프카로 극복하기](https://hoojjang.tistory.com/34) |
 | 4 | [관심사의 분리가 만들어낸 레이어 지옥, 이벤트로 해결하기](https://hoojjang.tistory.com/33) |
