@@ -45,16 +45,16 @@
 ### 📕 Latest Blog Posts
 | No. | Title |
 |-----|-------|
-| 1 | [브레이킹 루틴](https://hoojjang.tistory.com/39) |
-| 2 | [나의 마지막 부트캠프 루프팩 백엔드 1기 수료 후기](https://hoojjang.tistory.com/38) |
-| 3 | [10주동안 이커머스 프로젝트를 진행하며 깨달은 것들](https://hoojjang.tistory.com/37) |
-| 4 | [Redis ZSET으로 구현한 랭킹 시스템에서 발생할 수 있는 문제들](https://hoojjang.tistory.com/35) |
-| 5 | [카프카는 왜 필요할까? @EventListener의 한계와 카프카로 극복하기](https://hoojjang.tistory.com/34) |
-| 6 | [관심사의 분리가 만들어낸 레이어 지옥, 이벤트로 해결하기](https://hoojjang.tistory.com/33) |
-| 7 | [MySQL 인덱스 최적화로 쿼리 성능 600배 이상 개선한 이야기](https://hoojjang.tistory.com/32) |
-| 8 | [VO(Value Object) 값 객체 제대로 이해하기](https://hoojjang.tistory.com/30) |
-| 9 | [[Loop:PAK] WIL 2주차](https://hoojjang.tistory.com/29) |
-| 10 | [DB 없이 E2E 테스트 작성하기 (feat. Repository 안티패턴과 해결법)](https://hoojjang.tistory.com/28) |
+| 1 | [사람을 안다는 것](https://hoojjang.tistory.com/40) |
+| 2 | [브레이킹 루틴](https://hoojjang.tistory.com/39) |
+| 3 | [나의 마지막 부트캠프 루프팩 백엔드 1기 수료 후기](https://hoojjang.tistory.com/38) |
+| 4 | [10주동안 이커머스 프로젝트를 진행하며 깨달은 것들](https://hoojjang.tistory.com/37) |
+| 5 | [Redis ZSET으로 구현한 랭킹 시스템에서 발생할 수 있는 문제들](https://hoojjang.tistory.com/35) |
+| 6 | [카프카는 왜 필요할까? @EventListener의 한계와 카프카로 극복하기](https://hoojjang.tistory.com/34) |
+| 7 | [관심사의 분리가 만들어낸 레이어 지옥, 이벤트로 해결하기](https://hoojjang.tistory.com/33) |
+| 8 | [MySQL 인덱스 최적화로 쿼리 성능 600배 이상 개선한 이야기](https://hoojjang.tistory.com/32) |
+| 9 | [VO(Value Object) 값 객체 제대로 이해하기](https://hoojjang.tistory.com/30) |
+| 10 | [[Loop:PAK] WIL 2주차](https://hoojjang.tistory.com/29) |
 
 ---
 
