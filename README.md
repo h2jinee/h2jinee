@@ -45,16 +45,16 @@
 ### 📕 Latest Blog Posts
 | No. | Title |
 |-----|-------|
-| 1 | [실패를 통과하는 일](https://hoojjang.tistory.com/42) |
-| 2 | [함께 자라기](https://hoojjang.tistory.com/41) |
-| 3 | [사람을 안다는 것](https://hoojjang.tistory.com/40) |
-| 4 | [브레이킹 루틴](https://hoojjang.tistory.com/39) |
-| 5 | [나의 마지막 부트캠프 루프팩 백엔드 1기 수료 후기](https://hoojjang.tistory.com/38) |
-| 6 | [10주동안 이커머스 프로젝트를 진행하며 깨달은 것들](https://hoojjang.tistory.com/37) |
-| 7 | [Redis ZSET으로 구현한 랭킹 시스템에서 발생할 수 있는 문제들](https://hoojjang.tistory.com/35) |
-| 8 | [카프카는 왜 필요할까? @EventListener의 한계와 카프카로 극복하기](https://hoojjang.tistory.com/34) |
-| 9 | [관심사의 분리가 만들어낸 레이어 지옥, 이벤트로 해결하기](https://hoojjang.tistory.com/33) |
-| 10 | [MySQL 인덱스 최적화로 쿼리 성능 600배 이상 개선한 이야기](https://hoojjang.tistory.com/32) |
+| 1 | [료의 생각 없는 생각](https://hoojjang.tistory.com/43) |
+| 2 | [실패를 통과하는 일](https://hoojjang.tistory.com/42) |
+| 3 | [함께 자라기](https://hoojjang.tistory.com/41) |
+| 4 | [사람을 안다는 것](https://hoojjang.tistory.com/40) |
+| 5 | [브레이킹 루틴](https://hoojjang.tistory.com/39) |
+| 6 | [나의 마지막 부트캠프 루프팩 백엔드 1기 수료 후기](https://hoojjang.tistory.com/38) |
+| 7 | [10주동안 이커머스 프로젝트를 진행하며 깨달은 것들](https://hoojjang.tistory.com/37) |
+| 8 | [Redis ZSET으로 구현한 랭킹 시스템에서 발생할 수 있는 문제들](https://hoojjang.tistory.com/35) |
+| 9 | [카프카는 왜 필요할까? @EventListener의 한계와 카프카로 극복하기](https://hoojjang.tistory.com/34) |
+| 10 | [관심사의 분리가 만들어낸 레이어 지옥, 이벤트로 해결하기](https://hoojjang.tistory.com/33) |
 
 ---
 
