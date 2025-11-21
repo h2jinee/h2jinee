@@ -1,15 +1,23 @@
+import { writeFileSync } from "node:fs";
+import Parser from "rss-parser";
 
+/**
+ * README.MD content
+ * @type {string}
+ */
+let text = `
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:faffc0,10:e1ffc0,30:c0ffde,75:c0fffd,100:c0e8ff&height=100&section=header&text=&fontSize=0" width="100%"/>
 
-<img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Ghost.png" alt="Ghost" width="100" />
+<img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Ghost.png" alt="Ghost" width="100" height="100" />
 
 <h3><img src="https://github.com/user-attachments/assets/89e14a75-606f-4a0d-883a-70751728d93a" width="25" style="vertical-align: middle;" /> Hi there</h3>
-  
+
 - 🔭 I’ve been working as a backend developer since August 2020, with Spring as my primary framework.
 - 🌱 I work on data structures and algorithm problems to enhance my coding interview skills, and I'm also studying CS topics.
 - 💻 I'm continuously learning Java, Spring, and JPA to become a more proficient and deep-skilled developer.
 - 👯 I'm looking for opportunities to contribute to open-source projects.
 - 📫 You can reach me via [email](mailto:wjsgmlwls97@gmail.com).
+
 ---
 
 <h3><img src="https://github.com/user-attachments/assets/7a469779-3bab-4b13-9788-b3748b0217b9" width="20" style="vertical-align: middle;" /> Tech Stack</h3>
@@ -40,20 +48,39 @@
 ---
 
 <h3><img src="https://github.com/user-attachments/assets/ab98eaaf-7d7b-443e-9317-ca688c7cacc1" width="25" style="vertical-align: middle;" /> Latest Blog Posts</h3>
-  
+
 | No. | Title |
 |-----|-------|
-| 1 | [료의 생각 없는 생각](https://hoojjang.tistory.com/43) |
-| 2 | [실패를 통과하는 일](https://hoojjang.tistory.com/42) |
-| 3 | [함께 자라기](https://hoojjang.tistory.com/41) |
-| 4 | [사람을 안다는 것](https://hoojjang.tistory.com/40) |
-| 5 | [브레이킹 루틴](https://hoojjang.tistory.com/39) |
-| 6 | [나의 마지막 부트캠프 루프팩 백엔드 1기 수료 후기](https://hoojjang.tistory.com/38) |
-| 7 | [10주동안 이커머스 프로젝트를 진행하며 깨달은 것들](https://hoojjang.tistory.com/37) |
-| 8 | [Redis ZSET으로 구현한 랭킹 시스템에서 발생할 수 있는 문제들](https://hoojjang.tistory.com/35) |
-| 9 | [카프카는 왜 필요할까? @EventListener의 한계와 카프카로 극복하기](https://hoojjang.tistory.com/34) |
-| 10 | [관심사의 분리가 만들어낸 레이어 지옥, 이벤트로 해결하기](https://hoojjang.tistory.com/33) |
+`;
 
+// rss-parser instance
+const parser = new Parser({
+  headers: {
+    Accept: "application/rss+xml, application/xml, text/xml; q=0.1",
+  },
+});
+
+(async () => {
+  // Fetch RSS feed
+  const feed = await parser.parseURL("https://hoojjang.tistory.com/rss"); // Use your blog's RSS feed URL
+
+  // Loop through up to 10 latest posts
+  for (let i = 0; i < Math.min(feed.items.length, 10); i++) {
+    const { title, link } = feed.items[i];
+    console.log(`${i + 1}번째 게시물`);
+    console.log(`추가될 제목: ${title}`);
+    console.log(`추가될 링크: ${link}`);
+    text += `| ${i + 1} | [${title}](${link}) |\n`;
+  }
+
+  // If there are no blog posts
+  if (feed.items.length === 0) {
+    console.log("게시물이 없습니다.");
+    text += `| - | 게시물이 없습니다. |\n`;
+  }
+
+  // Rest of the README content
+  text += `
 ---
 
 <div align="center">
@@ -71,3 +98,11 @@
 <div align="center">
   <a href="https://myhits.vercel.app"><img src="https://myhits.vercel.app/api/hit/https%3A%2F%2Fgithub.com%2Fh2jinee?color=purple&label=hits&size=small" alt="hits" /></a>
 </div>
+`;
+
+  // Write to README.md
+  writeFileSync("README.md", text, "utf8", (e) => {
+    console.log(e);
+  });
+  console.log("업데이트 완료");
+})();
