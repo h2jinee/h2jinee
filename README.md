@@ -3,10 +3,7 @@
 
 <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Ghost.png" alt="Ghost" width="100" height="100" />
 
-### Hi there 👋
----
-
-### 🚀 About Me
+<h3><img src="https://github.com/user-attachments/assets/89e14a75-606f-4a0d-883a-70751728d93a" width="25" style="vertical-align: middle;" /> Hi there</h3>
 
 - 🔭 I’ve been working as a backend developer since August 2020, with Spring as my primary framework.
 - 🌱 I work on data structures and algorithm problems to enhance my coding interview skills, and I'm also studying CS topics.
@@ -16,7 +13,7 @@
 
 ---
 
-### 🛠 Tech Stack
+<h3><img src="https://github.com/user-attachments/assets/7a469779-3bab-4b13-9788-b3748b0217b9" width="20" style="vertical-align: middle;" /> Tech Stack</h3>
 
 <div align="center">
 
@@ -33,7 +30,8 @@
 
 ---
 
-### 🧩 Solved.ac Stats
+<h3><img src="https://github.com/user-attachments/assets/7d94091c-154c-40a5-b170-ca229e726779" width="25" style="vertical-align: middle;" /> Solved.ac</h3>
+
 <div align="center">
   <a href="https://solved.ac/wjsgmlwls97">
     <img src="http://mazassumnida.wtf/api/v2/generate_badge?boj=wjsgmlwls97" alt="Solved.ac Profile"/>
@@ -42,7 +40,8 @@
 
 ---
 
-### 📕 Latest Blog Posts
+<h3><img src="https://github.com/user-attachments/assets/ab98eaaf-7d7b-443e-9317-ca688c7cacc1" width="25" style="vertical-align: middle;" /> Latest Blog Posts</h3>
+
 | No. | Title |
 |-----|-------|
 | 1 | [료의 생각 없는 생각](https://hoojjang.tistory.com/43) |
