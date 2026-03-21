@@ -44,16 +44,16 @@
 
 | No. | Title |
 |-----|-------|
-| 1 | [[자바/스프링 개발자를 위한 실용주의 프로그래밍] Chapter 2 - 객체의 종류](https://hoojjang.tistory.com/48) |
-| 2 | [[자바/스프링 개발자를 위한 실용주의 프로그래밍] Chapter 1 - 절차지향과 비교하기](https://hoojjang.tistory.com/47) |
-| 3 | [컨텍스트 엔지니어링으로 구축하는 AI 에이전트](https://hoojjang.tistory.com/46) |
-| 4 | [[Open Source] 첫 오픈소스 기여 도전기 (MockK #1356)](https://hoojjang.tistory.com/45) |
-| 5 | [2025년 회고](https://hoojjang.tistory.com/44) |
-| 6 | [료의 생각 없는 생각](https://hoojjang.tistory.com/43) |
-| 7 | [실패를 통과하는 일](https://hoojjang.tistory.com/42) |
-| 8 | [함께 자라기](https://hoojjang.tistory.com/41) |
-| 9 | [사람을 안다는 것](https://hoojjang.tistory.com/40) |
-| 10 | [브레이킹 루틴](https://hoojjang.tistory.com/39) |
+| 1 | [Redis 기본 자료구조 (String, List, Set, Hash, Sorted Set)](https://hoojjang.tistory.com/49) |
+| 2 | [[자바/스프링 개발자를 위한 실용주의 프로그래밍] Chapter 2 - 객체의 종류](https://hoojjang.tistory.com/48) |
+| 3 | [[자바/스프링 개발자를 위한 실용주의 프로그래밍] Chapter 1 - 절차지향과 비교하기](https://hoojjang.tistory.com/47) |
+| 4 | [컨텍스트 엔지니어링으로 구축하는 AI 에이전트](https://hoojjang.tistory.com/46) |
+| 5 | [[Open Source] 첫 오픈소스 기여 도전기 (MockK #1356)](https://hoojjang.tistory.com/45) |
+| 6 | [2025년 회고](https://hoojjang.tistory.com/44) |
+| 7 | [료의 생각 없는 생각](https://hoojjang.tistory.com/43) |
+| 8 | [실패를 통과하는 일](https://hoojjang.tistory.com/42) |
+| 9 | [함께 자라기](https://hoojjang.tistory.com/41) |
+| 10 | [사람을 안다는 것](https://hoojjang.tistory.com/40) |
 
 ---
 
