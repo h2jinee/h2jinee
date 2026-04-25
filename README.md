@@ -44,16 +44,16 @@
 
 | No. | Title |
 |-----|-------|
-| 1 | [Redis의 캐시 전략과 클러스터 (Cache Strategy, Cluster)](https://hoojjang.tistory.com/53) |
-| 2 | [Redis의 메시징 패턴 (Pub/Sub, Stream)](https://hoojjang.tistory.com/52) |
-| 3 | [Redis의 Transaction, Pipelining, Lua Script](https://hoojjang.tistory.com/51) |
-| 4 | [Redis의 데이터 영속성 (Persistence)](https://hoojjang.tistory.com/50) |
-| 5 | [Redis 기본 자료구조 (String, List, Set, Hash, Sorted Set)](https://hoojjang.tistory.com/49) |
-| 6 | [[자바/스프링 개발자를 위한 실용주의 프로그래밍] Chapter 2 - 객체의 종류](https://hoojjang.tistory.com/48) |
-| 7 | [[자바/스프링 개발자를 위한 실용주의 프로그래밍] Chapter 1 - 절차지향과 비교하기](https://hoojjang.tistory.com/47) |
-| 8 | [컨텍스트 엔지니어링으로 구축하는 AI 에이전트](https://hoojjang.tistory.com/46) |
-| 9 | [[Open Source] 첫 오픈소스 기여 도전기 (MockK #1356)](https://hoojjang.tistory.com/45) |
-| 10 | [2025년 회고](https://hoojjang.tistory.com/44) |
+| 1 | [JPA N+1 문제](https://hoojjang.tistory.com/54) |
+| 2 | [Redis의 캐시 전략과 클러스터 (Cache Strategy, Cluster)](https://hoojjang.tistory.com/53) |
+| 3 | [Redis의 메시징 패턴 (Pub/Sub, Stream)](https://hoojjang.tistory.com/52) |
+| 4 | [Redis의 Transaction, Pipelining, Lua Script](https://hoojjang.tistory.com/51) |
+| 5 | [Redis의 데이터 영속성 (Persistence)](https://hoojjang.tistory.com/50) |
+| 6 | [Redis 기본 자료구조 (String, List, Set, Hash, Sorted Set)](https://hoojjang.tistory.com/49) |
+| 7 | [[자바/스프링 개발자를 위한 실용주의 프로그래밍] Chapter 2 - 객체의 종류](https://hoojjang.tistory.com/48) |
+| 8 | [[자바/스프링 개발자를 위한 실용주의 프로그래밍] Chapter 1 - 절차지향과 비교하기](https://hoojjang.tistory.com/47) |
+| 9 | [컨텍스트 엔지니어링으로 구축하는 AI 에이전트](https://hoojjang.tistory.com/46) |
+| 10 | [[Open Source] 첫 오픈소스 기여 도전기 (MockK #1356)](https://hoojjang.tistory.com/45) |
 
 ---
 
